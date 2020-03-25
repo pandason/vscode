@@ -88,7 +88,7 @@ export class MarkdownContentProvider {
 				${this.getStyles(resourceProvider, sourceUri, config, state)}
 				<base href="${resourceProvider.asWebviewUri(markdownDocument.uri)}">
 			</head>
-			<body class="vscode-body ${config.scrollBeyondLastLine ? 'scrollBeyondLastLine' : ''} ${config.wordWrap ? 'wordWrap' : ''} ${config.markEditorSelection ? 'showEditorSelection' : ''}">
+			<body role="document" class="vscode-body ${config.scrollBeyondLastLine ? 'scrollBeyondLastLine' : ''} ${config.wordWrap ? 'wordWrap' : ''} ${config.markEditorSelection ? 'showEditorSelection' : ''}">
 				${body}
 				<div class="code-line" data-line="${markdownDocument.lineCount}"></div>
 				${this.getScripts(resourceProvider, nonce)}

@@ -317,7 +317,7 @@ export class ReleaseNotesManager {
 					${css}
 				</style>
 			</head>
-			<body>${content}</body>
+			<body role="document">${content}</body>
 		</html>`;
 	}
 }

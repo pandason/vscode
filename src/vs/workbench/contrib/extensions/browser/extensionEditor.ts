@@ -823,7 +823,7 @@ export class ExtensionEditor extends BaseEditor {
 					${css}
 				</style>
 			</head>
-			<body>
+			<body role="document">
 				<a id="scroll-to-top" role="button" aria-label="scroll to top" href="#"><span class="icon"></span></a>
 				${body}
 			</body>
